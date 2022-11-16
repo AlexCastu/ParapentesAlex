@@ -10,6 +10,7 @@ import { DatosContexto } from "../src/Contexto/ContextoCesta";
 import P_inicio from "./Pages/P_Inicio";
 import P_Contacto from "./Pages/P_Contacto";
 import NotFound from "./components/Not_Found/NotFound";
+import P_NotFound from "./Pages/P_NotFound";
 function App() {
    return (
       <div className="App">
@@ -24,7 +25,7 @@ function App() {
                <Route path="/accesorios" element={<P_Accesorios></P_Accesorios>} />
                <Route path="/cesta" element={<CestaDeLaCompra></CestaDeLaCompra>} />
                <Route path="/contacto" element={<P_Contacto></P_Contacto>} />
-               <Route path="*" element={<NotFound></NotFound>} />
+               <Route path="*" element={<P_NotFound></P_NotFound>} />
             </Routes>
          </DatosContexto>
       </div>

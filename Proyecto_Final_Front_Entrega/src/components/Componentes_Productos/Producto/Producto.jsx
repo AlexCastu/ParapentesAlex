@@ -30,12 +30,13 @@ const Producto = ({ data }) => {
    const [loadingProductosPaginacion, setLoadingProductosPaginacion] = useState(true);
 
    const getDatosDB = () => {
-      console.log(filtros);
+      setLoadingProductosPaginacion(false);
       axios
          .get(
             `https://proyectofinalback-production.up.railway.app/tienda/${data.categoriaAxios}?fabricante=${filtros.fabricante}&busquedaManual=${filtros.busquedaManual}&categoria=${filtros.categoria}&precio=${filtros.precio}&pagina=${paginaActual}&ordenPrecio=${ordenPrecio}&ordenMarca=${ordenMarca}`
          )
          .then((response) => {
+            console.log(response);
             setProduct(response.data.docs);
             setPaginaActual(response.data.page);
             setPaginaSiguiente(response.data.hasNextPage);

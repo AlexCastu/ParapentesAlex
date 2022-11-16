@@ -12,7 +12,13 @@ const Element = ({ data, categoria, comprobarProductosEnLaCesta, eliminando }) =
    return (
       <div key={data._id} className="elementoCesta">
          <div className="divImagen">
-            <img alt={data.nombre} src={data.img}></img>
+            <img
+               alt={data.nombre}
+               src={
+                  data.img ||
+                  "https://img.freepik.com/premium-vector/cute-people-playing-paragliding-cartoon-icon-illustration-people-sport-icon-concept-isolated-premium-flat-cartoon-style_138676-1552.jpg?w=826"
+               }
+            ></img>
          </div>
          <div>
             <p>Categoria</p>
