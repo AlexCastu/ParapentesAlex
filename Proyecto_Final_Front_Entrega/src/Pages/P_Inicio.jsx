@@ -4,7 +4,7 @@ import Inicio from "../components/Inicio/Inicio";
 const P_inicio = () => {
    return (
       <>
-         <Inicio></Inicio>;
+         <Inicio></Inicio>
       </>
    );
 };

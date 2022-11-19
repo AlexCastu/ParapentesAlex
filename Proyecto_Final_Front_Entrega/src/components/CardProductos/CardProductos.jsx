@@ -14,7 +14,7 @@ const CardProductos = ({ dato, producto }) => {
    const [elemento, setElemento] = useState({ data: {} });
 
    const getProductoEntero = () => {
-      axios.get(`https://proyectofinalback-production.up.railway.app/tienda/productoUnico?id=${dato._id}&categoria=${producto}`).then((response) => {
+      axios.get(`https://tiendaparapentes.fly.dev/tienda/productoUnico?id=${dato._id}&categoria=${producto}`).then((response) => {
          setElemento(response.data);
          handleShow(true);
       });

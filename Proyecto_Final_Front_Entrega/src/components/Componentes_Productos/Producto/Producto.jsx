@@ -11,7 +11,7 @@ import Spinner from "react-bootstrap/Spinner";
 import Footer from "../../Footer/Footer";
 
 const Producto = ({ data }) => {
-   const URL = `https://proyectofinalback-production.up.railway.app/tienda/${data.categoriaBuscador}`;
+   const URL = `https://tiendaparapentes.fly.dev/tienda/${data.categoriaBuscador}`;
    const [product, setProduct] = useState([]);
    const [filtros, setFiltros] = useState({
       fabricante: "",
@@ -33,7 +33,7 @@ const Producto = ({ data }) => {
       setLoadingProductosPaginacion(false);
       axios
          .get(
-            `https://proyectofinalback-production.up.railway.app/tienda/${data.categoriaAxios}?fabricante=${filtros.fabricante}&busquedaManual=${filtros.busquedaManual}&categoria=${filtros.categoria}&precio=${filtros.precio}&pagina=${paginaActual}&ordenPrecio=${ordenPrecio}&ordenMarca=${ordenMarca}`
+            `https://tiendaparapentes.fly.dev/tienda/${data.categoriaAxios}?fabricante=${filtros.fabricante}&busquedaManual=${filtros.busquedaManual}&categoria=${filtros.categoria}&precio=${filtros.precio}&pagina=${paginaActual}&ordenPrecio=${ordenPrecio}&ordenMarca=${ordenMarca}`
          )
          .then((response) => {
             console.log(response);

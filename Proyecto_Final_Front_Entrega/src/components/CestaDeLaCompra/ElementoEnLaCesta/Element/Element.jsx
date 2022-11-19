@@ -4,7 +4,7 @@ import axios from "axios";
 const Element = ({ data, categoria, comprobarProductosEnLaCesta, eliminando }) => {
    const eliminarDeLaCesta = (id) => {
       eliminando(true);
-      axios.get(`https://proyectofinalback-production.up.railway.app/tienda/eliminarDeLaCesta?id=${id}&categoria=${categoria}`).then((response) => {
+      axios.get(`https://tiendaparapentes.fly.dev/tienda/eliminarDeLaCesta?id=${id}&categoria=${categoria}`).then((response) => {
          comprobarProductosEnLaCesta();
       });
    };

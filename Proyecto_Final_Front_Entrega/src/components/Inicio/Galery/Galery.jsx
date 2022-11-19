@@ -10,40 +10,41 @@ import Galeria7 from "../../../img/Galeria/Galeria7.jpg";
 import "./Galery.css";
 
 function Galery() {
-  return (
-    <div className="containerGaleriaPrincipal">
-      <Carousel>
-        <Carousel.Item interval={2000}>
-          <img className="w-100" src={Galeria1} alt="First slide" />
-          <Carousel.Caption></Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={2000}>
-          <img className="w-100" src={Galeria2} alt="First slide" />
-          <Carousel.Caption></Carousel.Caption>
-        </Carousel.Item>{" "}
-        <Carousel.Item interval={2000}>
-          <img className="w-100" src={Galeria3} alt="Second slide" />
-          <Carousel.Caption></Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={2000}>
-          <img className="w-100" src={Galeria4} alt="Third slide" />
-          <Carousel.Caption></Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={2000}>
-          <img className="w-100" src={Galeria5} alt="First slide" />
-          <Carousel.Caption></Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={2000}>
-          <img className="w-100" src={Galeria6} alt="First slide" />
-          <Carousel.Caption></Carousel.Caption>
-        </Carousel.Item>{" "}
-        <Carousel.Item interval={2000}>
-          <img className="w-100" src={Galeria7} alt="Second slide" />
-          <Carousel.Caption></Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-    </div>
-  );
+   return (
+      <div className="containerGaleriaPrincipal">
+         <Carousel>
+            <Carousel.Item interval={2000}>
+               <img className="w-100" src={Galeria1} alt="First slide" />
+               <Carousel.Caption></Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item interval={2000}>
+               <img className="w-100" src={Galeria2} alt="First slide" />
+               <Carousel.Caption></Carousel.Caption>
+            </Carousel.Item>{" "}
+            <Carousel.Item interval={2000}>
+               <img className="w-100" src={Galeria3} alt="Second slide" />
+               <Carousel.Caption></Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item interval={2000}>
+               <img className="w-100" src={Galeria4} alt="Third slide" />
+
+               <Carousel.Caption></Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item interval={2000}>
+               <img className="w-100" src={Galeria5} alt="First slide" />
+               <Carousel.Caption></Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item interval={2000}>
+               <img className="w-100" src={Galeria6} alt="First slide" />
+               <Carousel.Caption></Carousel.Caption>
+            </Carousel.Item>{" "}
+            <Carousel.Item interval={2000}>
+               <img className="w-100" src={Galeria7} alt="Second slide" />
+               <Carousel.Caption></Carousel.Caption>
+            </Carousel.Item>
+         </Carousel>
+      </div>
+   );
 }
 
 export default Galery;

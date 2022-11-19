@@ -13,7 +13,7 @@ const ProductosIniciales = () => {
    let [loading, setLoading] = useState(true);
 
    useEffect(() => {
-      axios.get("https://proyectofinalback-production.up.railway.app/tienda/productosIniciales").then((response) => {
+      axios.get("https://tiendaparapentes.fly.dev/tienda/productosIniciales").then((response) => {
          setParapentes(response.data.parapentes);
          setParacaidas(response.data.paracaidas);
          setSillas(response.data.sillas);
